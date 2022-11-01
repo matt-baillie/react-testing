@@ -1,8 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders learn react link", () => {
+test("button has correct initial colour", () => {
   render(<App />);
-  const linkElement = screen.getByText("Learn React");
-  expect(linkElement).toBeInTheDocument();
+  // find an element with a role of button and text of "change to blue"
+  const colorButton = screen.getByRole("button", { name: "Change to blue" });
+  expect(colorButton).toHaveStyle({ backgroundColor: "red" });
+});
+
+test("button turns blue when clicked", () => {
+  render(<App />);
 });
