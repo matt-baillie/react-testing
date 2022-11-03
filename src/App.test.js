@@ -34,7 +34,7 @@ test("initial conditions", () => {
 
 // Add Checkbox Functionality
 // - when checked, button disabled
-//    -
+//
 test("Checkbox disables button on first click and enables button on second click", () => {
   render(<App />);
   // Select elements
