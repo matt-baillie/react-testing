@@ -20,6 +20,7 @@ function App() {
       >
         Change to {newButtonColor}
       </button>
+      <label htmlFor="disable-button-checkbox">Disable button</label>
       <input
         type="checkbox"
         name=""

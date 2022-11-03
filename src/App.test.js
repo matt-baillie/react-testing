@@ -34,7 +34,7 @@ test("Checkbox disables button on first click and enables button on second click
   render(<App />);
   // Select elements
   const colorButton = screen.getByRole("button", { name: "Change to blue" });
-  const checkbox = screen.getByRole("checkbox");
+  const checkbox = screen.getByRole("checkbox", { name: "Disable button" });
 
   // Check checkbox and check button disabled
   fireEvent.click(checkbox);
